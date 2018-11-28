@@ -1,0 +1,8 @@
+ext {
+  compileSdkVersionValue = 28
+  minSdkVersionValue = 19
+  targetSdkVersionValue = 28
+  versionCodeValue = 1
+  versionNameValue = "1.0"
+  kotlinVersion = '1.3.0'
+}

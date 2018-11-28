@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ead519</color>
+    <color name="colorPrimaryDark">#ceba0a</color>
+    <color name="colorAccent">#795548</color>
+    <color name="textPrimary">#212121</color>
+
+    <color name="loadingBackgroundColor">#BFFFFFFF</color>
+    <color name="vehicleListBackground">#3e3434</color>
+</resources>

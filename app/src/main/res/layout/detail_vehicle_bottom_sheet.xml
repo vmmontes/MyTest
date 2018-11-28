@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detailVehicleParent"
+        tools:context=".ui.vehicleDetail.VehicleDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/squareInfoDetail"
+        android:background="@drawable/white_with_yellow_corners"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="15dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addressTitleDetailTxt"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Address:"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressDetailTxt"
+            android:textSize="18sp"
+            android:layout_below="@id/addressTitleDetailTxt"
+            android:text="address"
+            />
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressDetailTxt"
+                android:layout_marginTop="10dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/NameTitleDetailTxt"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Name:"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameDetailTxt"
+                    android:textSize="18sp"
+                    android:layout_below="@id/NameTitleDetailTxt"
+                    android:text="address"
+                    app:layout_constraintStart_toEndOf="@+id/NameTitleDetailTxt"
+                    android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/fuelTitleTxt" app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fuelTitleTxt"
+                    android:layout_below="@id/nameDetailTxt"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Fuel:"
+                    app:layout_constraintStart_toEndOf="@+id/NameTitleDetailTxt"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fuelTxt"
+                    android:layout_below="@id/nameDetailTxt"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="25%" app:layout_constraintStart_toEndOf="@+id/fuelTitleTxt"
+                    app:layout_constraintHorizontal_bias="0.442" android:textAlignment="viewStart"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vinTitleTxt"
+                    android:layout_below="@id/nameDetailTxt"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="VIN:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/NameTitleDetailTxt"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vinTxt"
+                    android:layout_below="@id/nameDetailTxt"
+                    android:textSize="18sp"
+                    android:text="VSJJHHJSADJASD"
+                    app:layout_constraintStart_toEndOf="@+id/vinTitleTxt"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nameDetailTxt"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
