@@ -1,4 +1,4 @@
-package com.vmmontes.mytest.useCases
+package com.vmmontes.mytest.domain.useCases
 
 import com.vmmontes.mytest.domain.model.VehicleDomainModel
 

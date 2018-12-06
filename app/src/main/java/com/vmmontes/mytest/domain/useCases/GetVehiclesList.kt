@@ -1,6 +1,6 @@
-package com.vmmontes.mytest.useCases
+package com.vmmontes.mytest.domain.useCases
 
-import com.vmmontes.mytest.dataSource.ApiData
+import com.vmmontes.mytest.data.VehiclesRepositoryImp
 import com.vmmontes.mytest.domain.model.VehicleDomainModel
 import kotlinx.coroutines.*
 
@@ -11,7 +11,7 @@ class GetVehiclesList{
 
         GlobalScope.launch(Dispatchers.Main) {
             async(Dispatchers.IO) {
-                vehicles = ApiData().getVehicles()
+                vehicles = VehiclesRepositoryImp().getVehicles()
 
             }.await().run {
                 if (vehicles.isEmpty()) {

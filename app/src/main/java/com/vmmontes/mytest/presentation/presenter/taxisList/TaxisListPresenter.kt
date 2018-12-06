@@ -2,8 +2,8 @@ package com.vmmontes.mytest.presentation.presenter.taxisList
 
 import com.vmmontes.mytest.domain.model.VehicleDomainModel
 import com.vmmontes.mytest.ui.vehicleList.VehicleListContract
-import com.vmmontes.mytest.useCases.GetVehiclesList
-import com.vmmontes.mytest.useCases.GetVehiclesUseCaseCallback
+import com.vmmontes.mytest.domain.useCases.GetVehiclesList
+import com.vmmontes.mytest.domain.useCases.GetVehiclesUseCaseCallback
 
 class TaxisListPresenter: GetVehiclesUseCaseCallback {
 
