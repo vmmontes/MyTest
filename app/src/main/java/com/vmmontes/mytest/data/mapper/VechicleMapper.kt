@@ -1,4 +1,4 @@
-package com.vmmontes.mytest.dataSource.mapper
+package com.vmmontes.mytest.data.mapper
 
 import com.api.model.VehicleApiModel
 import com.vmmontes.mytest.domain.model.VehicleDomainModel
