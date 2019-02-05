@@ -1,1 +1,1 @@
-# MyTest
+# Clean Architecture project example
